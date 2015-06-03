@@ -12,6 +12,9 @@
 		5785CAD01B1D14F100541731 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5785CACF1B1D14F100541731 /* Images.xcassets */; };
 		5785CAD31B1D14F100541731 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5785CAD11B1D14F100541731 /* MainMenu.xib */; };
 		5785CADF1B1D14F100541731 /* PSUDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5785CADE1B1D14F100541731 /* PSUDemoTests.m */; };
+		5785CAEA1B1D2D5700541731 /* CowsayInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 5785CAE91B1D2D5700541731 /* CowsayInstaller.m */; };
+		5785CAED1B1D462F00541731 /* CowsayUnzipper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5785CAEC1B1D462F00541731 /* CowsayUnzipper.m */; };
+		5785CAF01B1E7E4200541731 /* CowSayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5785CAEF1B1E7E4200541731 /* CowSayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,12 @@
 		5785CAD81B1D14F100541731 /* PSUDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSUDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5785CADD1B1D14F100541731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5785CADE1B1D14F100541731 /* PSUDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSUDemoTests.m; sourceTree = "<group>"; };
+		5785CAE81B1D2D5700541731 /* CowsayInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CowsayInstaller.h; sourceTree = "<group>"; };
+		5785CAE91B1D2D5700541731 /* CowsayInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CowsayInstaller.m; sourceTree = "<group>"; };
+		5785CAEB1B1D462F00541731 /* CowsayUnzipper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CowsayUnzipper.h; sourceTree = "<group>"; };
+		5785CAEC1B1D462F00541731 /* CowsayUnzipper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CowsayUnzipper.m; sourceTree = "<group>"; };
+		5785CAEE1B1E7E4200541731 /* CowSayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CowSayer.h; sourceTree = "<group>"; };
+		5785CAEF1B1E7E4200541731 /* CowSayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CowSayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +87,12 @@
 			children = (
 				5785CACA1B1D14F100541731 /* AppDelegate.h */,
 				5785CACB1B1D14F100541731 /* AppDelegate.m */,
+				5785CAEE1B1E7E4200541731 /* CowSayer.h */,
+				5785CAEF1B1E7E4200541731 /* CowSayer.m */,
+				5785CAEB1B1D462F00541731 /* CowsayUnzipper.h */,
+				5785CAEC1B1D462F00541731 /* CowsayUnzipper.m */,
+				5785CAE81B1D2D5700541731 /* CowsayInstaller.h */,
+				5785CAE91B1D2D5700541731 /* CowsayInstaller.m */,
 				5785CACF1B1D14F100541731 /* Images.xcassets */,
 				5785CAD11B1D14F100541731 /* MainMenu.xib */,
 				5785CAC81B1D14F100541731 /* Supporting Files */,
@@ -211,6 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5785CACE1B1D14F100541731 /* main.m in Sources */,
+				5785CAEA1B1D2D5700541731 /* CowsayInstaller.m in Sources */,
+				5785CAF01B1E7E4200541731 /* CowSayer.m in Sources */,
+				5785CAED1B1D462F00541731 /* CowsayUnzipper.m in Sources */,
 				5785CACC1B1D14F100541731 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
