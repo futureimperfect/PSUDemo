@@ -24,15 +24,17 @@
 
     NSData *data = [fh readDataToEndOfFile];
     NSString *results = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    [self sayWhatTheCowSays:string];
+    [self sayWhatTheCowSays:string withVoice:@"Alex"];
 
     return results;
 }
 
-- (void)sayWhatTheCowSays:(NSString *)whatSheSaid
+- (void)sayWhatTheCowSays:(NSString *)whatSheSaid withVoice:(NSString *)voice
 {
     NSTask *task = [[NSTask alloc] init];
-    NSArray *args = [whatSheSaid componentsSeparatedByString:@" "];
+    NSArray *positionalArgs = [whatSheSaid componentsSeparatedByString:@" "];
+    NSMutableArray *args = [NSMutableArray arrayWithObjects:@"-v", voice, nil];
+    [args addObjectsFromArray:positionalArgs];
     [task setLaunchPath:@"/usr/bin/say"];
     [task setArguments:args];
     [task launch];

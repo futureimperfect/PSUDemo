@@ -55,7 +55,7 @@ NSString *const whatShouldCowsay = @"whatShouldCowsay";
     NSFileManager *fm = [NSFileManager defaultManager];
     NSString *cowsayExecutable = @"/usr/local/bin/cowsay";
     if ([fm isExecutableFileAtPath:cowsayExecutable]) {
-        [_cowsayInstalledStatusIndicator setImage:[NSImage imageNamed:@"NSStatusAvailable"]];
+        [_cowsayInstalledStatusIndicator setImage:[NSImage imageNamed:NSImageNameStatusAvailable]];
         [_cowsayInstalledLabel setStringValue:@"cowsay is installed."];
         [_installCowsayButton setEnabled:NO];
     } else {
@@ -77,12 +77,12 @@ NSString *const whatShouldCowsay = @"whatShouldCowsay";
         [_cowsayInstalledStatusIndicator setHidden:NO];
 
         if (success) {
-            [_cowsayInstalledStatusIndicator setImage:[NSImage imageNamed:@"NSStatusAvailable"]];
+            [_cowsayInstalledStatusIndicator setImage:[NSImage imageNamed:NSImageNameStatusAvailable]];
             [_cowsayInstalledLabel setStringValue:@"cowsay is installed."];
             [_installCowsayButton setEnabled:NO];
             [_sayItButton setEnabled:YES];
         } else {
-            [_cowsayInstalledStatusIndicator setImage:[NSImage imageNamed:@"NSStatusUnavailable"]];
+            [_cowsayInstalledStatusIndicator setImage:[NSImage imageNamed:NSImageNameStatusUnavailable]];
         }
     }];
 
