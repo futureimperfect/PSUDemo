@@ -18,7 +18,6 @@
 @implementation AppDelegate
 
 NSString *const theCowHerself = @"theCowHerself";
-NSString *const whatShouldCowsay = @"whatShouldCowsay";
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
